@@ -23,14 +23,15 @@ INSERT INTO albums (name, release_year)
 VALUES
 	('The fat of the land', 1997),
 	('Doggystyle', 1993),
-	('Без тормозов', 1999),
+	('Без тормозов', 2019),
 	('Follow the leader', 1998),
-	('Hybrid Theory', 2018),
+	('Hybrid Theory', 2019),
 	('Глубина резкости', 1999),
 	('Queen', 1973),
 	('Гранатовый альбом', 1998),
-	('Maser of Puppetst', 1986),
-	('By the way', 2018);
+	('Maser of Puppets', 1986),
+	('Load', 2019),
+	('By the way', 2020);
 
 INSERT INTO tracks (name, duration, album)
 VALUES
@@ -53,7 +54,8 @@ VALUES
 	('Battery', 313, 9),
 	('Disposable Heroes', 497, 9),
 	('Can’t Stop', 269, 10),
-	('Midnight', 295, 10);
+	('Midnight', 295, 10),
+	('King Nothing', 196, 11);
 
 INSERT INTO collections (name, release_year)
 VALUES
@@ -65,4 +67,58 @@ VALUES
 	('Dance Hits', 2002),
 	('Rap territory', 2018),
 	('Metal Ballads', 1998);
- 
+
+INSERT INTO artists_genres
+VALUES
+	(1, 4),
+	(2, 3),
+	(3, 1),
+	(4, 2),
+	(4, 5),
+	(5, 2),
+	(5, 3),
+	(6, 3),
+	(6, 4),
+	(7, 2),
+	(8, 2),
+	(9, 2),
+	(9, 5),
+	(10, 2);
+
+INSERT INTO artists_albums
+VALUES
+	(1, 1),
+	(2, 2),
+	(3, 3),
+	(4, 4),
+	(5, 5),
+	(6, 6),
+	(7, 7),
+	(8, 8),
+	(9, 9),
+	(10, 10),
+	(9, 11);
+
+INSERT INTO collections_tracks 
+VALUES
+	(1, 1),
+	(1, 3),
+	(1, 7),
+	(2, 2),
+	(2, 5),
+	(2, 12),
+	(3, 6),
+	(3, 17),
+	(3, 19),
+	(4, 7),
+	(4, 9),
+	(4, 19),
+	(4, 20),
+	(5, 11),
+	(5, 15),
+	(5, 16),
+	(6, 1),
+	(6, 17),
+	(7, 4),
+	(8, 19),
+	(8, 20);
